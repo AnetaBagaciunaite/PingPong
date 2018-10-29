@@ -103,7 +103,7 @@ public synchronized void stop(){
         g.drawImage (langas, 0, 0, getWidth(), getHeight(), null);
         g.setColor(Color.white);
         g.drawString("Zaidejas 1: " + zaidejas1, 0, 10 );
-        g.drawString("Zaidejas 2: " + zaidejas2, getWidth()-75,10 );
+        g.drawString("Zaidejas 2: " + zaidejas2, getWidth()-80,10 );
 
        zaidejas.render(g);
        pc.render(g);

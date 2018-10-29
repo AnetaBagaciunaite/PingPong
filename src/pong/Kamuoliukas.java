@@ -8,6 +8,7 @@ package pong;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -39,11 +40,22 @@ public class Kamuoliukas {
         {
            zaidimas.zaidejas2++;
            greitisx = greitis;
+           if(zaidimas.zaidejas2 ==15)
+           {
+              JOptionPane.showMessageDialog(zaidimas.frame, "Zaidejas2 laimejo!");
+               System.exit(0);
+           }
            
         } else if (x+ dydis >= zaidimas.getWidth())
         {
             zaidimas.zaidejas1++;
             greitisx = -greitis;
+            if(zaidimas.zaidejas1 ==15)
+            {
+               JOptionPane.showMessageDialog(zaidimas.frame, "Zaidejas1 laimejo!");
+               System.exit(0);
+
+            }
             
         }
         if(y <=0){
